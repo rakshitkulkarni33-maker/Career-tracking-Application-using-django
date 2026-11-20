@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block page_title %}{{ heading }}{% endblock %}{% block content %}<div class="panel form-panel"><form method="post">{% csrf_token %}{{ form.as_p }}<div class="form-actions"><a class="btn" href="{% url 'applications' %}">Cancel</a><button class="btn primary">Save opportunity</button></div></form></div>{% endblock %}
